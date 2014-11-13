@@ -22,6 +22,8 @@
 		16558F1A1A145C3100B2F59A /* MBPageMessenger.m in Sources */ = {isa = PBXBuildFile; fileRef = 16558F191A145C3100B2F59A /* MBPageMessenger.m */; };
 		16558F1D1A145CAD00B2F59A /* MBWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 16558F1C1A145CAD00B2F59A /* MBWireframe.m */; };
 		16558F201A145D6900B2F59A /* MBAssemblingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 16558F1F1A145D6900B2F59A /* MBAssemblingFactory.m */; };
+		16558F241A1463C200B2F59A /* MBApiRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 16558F231A1463C200B2F59A /* MBApiRequest.m */; };
+		16558F271A14646D00B2F59A /* MBApiResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 16558F261A14646D00B2F59A /* MBApiResponse.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,10 @@
 		16558F1C1A145CAD00B2F59A /* MBWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBWireframe.m; path = Classes/Routing/MBWireframe.m; sourceTree = "<group>"; };
 		16558F1E1A145D6900B2F59A /* MBAssemblingFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBAssemblingFactory.h; path = Classes/Routing/MBAssemblingFactory.h; sourceTree = "<group>"; };
 		16558F1F1A145D6900B2F59A /* MBAssemblingFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBAssemblingFactory.m; path = Classes/Routing/MBAssemblingFactory.m; sourceTree = "<group>"; };
+		16558F221A1463C200B2F59A /* MBApiRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBApiRequest.h; path = Classes/APIService/MBApiRequest.h; sourceTree = "<group>"; };
+		16558F231A1463C200B2F59A /* MBApiRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBApiRequest.m; path = Classes/APIService/MBApiRequest.m; sourceTree = "<group>"; };
+		16558F251A14646D00B2F59A /* MBApiResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBApiResponse.h; path = Classes/APIService/MBApiResponse.h; sourceTree = "<group>"; };
+		16558F261A14646D00B2F59A /* MBApiResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBApiResponse.m; path = Classes/APIService/MBApiResponse.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +217,7 @@
 				161169591A136D2D00740F95 /* Presenters */,
 				161169581A136D2600740F95 /* Interactors */,
 				161169571A136D1D00740F95 /* DTOs */,
+				16558F211A14637B00B2F59A /* API Service */,
 				161169561A136D0C00740F95 /* Tools */,
 				161169341A13685700740F95 /* AppDelegate.h */,
 				161169351A13685700740F95 /* AppDelegate.m */,
@@ -261,6 +268,17 @@
 				16558F0A1A14557200B2F59A /* NSString+MBUtility.m */,
 			);
 			name = Utilities;
+			sourceTree = "<group>";
+		};
+		16558F211A14637B00B2F59A /* API Service */ = {
+			isa = PBXGroup;
+			children = (
+				16558F221A1463C200B2F59A /* MBApiRequest.h */,
+				16558F231A1463C200B2F59A /* MBApiRequest.m */,
+				16558F251A14646D00B2F59A /* MBApiResponse.h */,
+				16558F261A14646D00B2F59A /* MBApiResponse.m */,
+			);
+			name = "API Service";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16558F141A145B6E00B2F59A /* UIStoryboard+MessageBoard.m in Sources */,
+				16558F271A14646D00B2F59A /* MBApiResponse.m in Sources */,
 				16558F111A14592600B2F59A /* MBBaseViewController.m in Sources */,
 				16558F171A145BEF00B2F59A /* UIViewController+MBWireframe.m in Sources */,
 				161169391A13685700740F95 /* ViewController.m in Sources */,
@@ -374,6 +393,7 @@
 				16558F1A1A145C3100B2F59A /* MBPageMessenger.m in Sources */,
 				16558F201A145D6900B2F59A /* MBAssemblingFactory.m in Sources */,
 				16558F1D1A145CAD00B2F59A /* MBWireframe.m in Sources */,
+				16558F241A1463C200B2F59A /* MBApiRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
