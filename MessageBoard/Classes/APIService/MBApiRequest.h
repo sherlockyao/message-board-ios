@@ -10,7 +10,8 @@
 #import "AFNetworking.h"
 
 typedef enum {
-  MBApiRequestLookup,
+  MBApiRequestLocateBoard,
+  MBApiRequestCreateMessage,
 } MBApiRequestType;
 
 typedef enum {

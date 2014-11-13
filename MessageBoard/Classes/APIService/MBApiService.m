@@ -44,10 +44,10 @@
 - (void)finishRequest:(MBApiRequest *)apiRequest withResponseObject:(id)responseObject error:(NSError *)error {
   MBApiResponse *apiResponse = [MBApiResponse new];
   if (responseObject && [responseObject isKindOfClass:[NSDictionary class]]) {
-    apiResponse.isSuccess = YES;
+    apiResponse.success = YES;
     apiResponse.responseObject = apiRequest.responseParser((NSDictionary *)responseObject);
   } else {
-    apiResponse.isSuccess = NO;
+    apiResponse.success = NO;
     apiResponse.message = [error description];
   }
   if ([self.delegate respondsToSelector:@selector(apiService:didFinishRequest:withResponse:)]) {

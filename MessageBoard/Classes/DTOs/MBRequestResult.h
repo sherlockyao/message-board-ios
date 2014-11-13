@@ -1,5 +1,5 @@
 //
-//  MBApiResponse.h
+//  MBRequestResult.h
 //  MessageBoard
 //
 //  Created by Sherlock on 11/13/14.
@@ -8,10 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MBApiResponse : NSObject
+@interface MBRequestResult : NSObject
 
 @property (nonatomic, assign) BOOL success;
-@property (nonatomic, strong) NSString *message;
-@property (nonatomic, strong) id responseObject;
 
 @end
