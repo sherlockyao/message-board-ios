@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AFNetworking.h"
 
 typedef enum {
   MBApiRequestLookup,
@@ -28,5 +29,7 @@ typedef id (^MBApiResponseParser)(NSDictionary *data);
 @property (nonatomic, assign) MBApiRequestType type;
 @property (nonatomic, assign) MBApiRequestMethod method;
 @property(nonatomic,copy) MBApiResponseParser responseParser;
+
+- (AFHTTPRequestOperation *)httpRequestOperationValue;
 
 @end
