@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		161169331A13685700740F95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 161169321A13685700740F95 /* main.m */; };
-		161169361A13685700740F95 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 161169351A13685700740F95 /* AppDelegate.m */; };
-		161169391A13685700740F95 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 161169381A13685700740F95 /* ViewController.m */; };
 		1611693C1A13685700740F95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1611693A1A13685700740F95 /* Main.storyboard */; };
 		1611693E1A13685700740F95 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1611693D1A13685700740F95 /* Images.xcassets */; };
 		161169411A13685700740F95 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1611693F1A13685700740F95 /* LaunchScreen.xib */; };
@@ -30,6 +28,9 @@
 		16558F331A14995400B2F59A /* NSDictionary+MBUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 16558F321A14995400B2F59A /* NSDictionary+MBUtility.m */; };
 		16558F361A14A74400B2F59A /* MBRequestResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 16558F351A14A74400B2F59A /* MBRequestResult.m */; };
 		16558F391A14A80600B2F59A /* MBBoardInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 16558F381A14A80600B2F59A /* MBBoardInfo.m */; };
+		16558F401A14A95200B2F59A /* MBMessageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 16558F3F1A14A95200B2F59A /* MBMessageInfo.m */; };
+		16558F431A14A95D00B2F59A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16558F421A14A95D00B2F59A /* AppDelegate.m */; };
+		16558F461A14A97500B2F59A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16558F451A14A97500B2F59A /* ViewController.m */; };
 		7777F8F48FF54C9EB0D5748F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1356CABEE7F44588B72EBCF8 /* libPods.a */; };
 		9DB17E671EC1404B9A71F55C /* libPods-MessageBoardTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F2B2428F5C3409F860BDF6A /* libPods-MessageBoardTests.a */; };
 /* End PBXBuildFile section */
@@ -49,10 +50,6 @@
 		1611692D1A13685700740F95 /* MessageBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessageBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		161169311A13685700740F95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		161169321A13685700740F95 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		161169341A13685700740F95 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		161169351A13685700740F95 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		161169371A13685700740F95 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		161169381A13685700740F95 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1611693B1A13685700740F95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1611693D1A13685700740F95 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		161169401A13685700740F95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -91,8 +88,12 @@
 		16558F351A14A74400B2F59A /* MBRequestResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBRequestResult.m; path = Classes/DTOs/MBRequestResult.m; sourceTree = "<group>"; };
 		16558F371A14A80600B2F59A /* MBBoardInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBBoardInfo.h; path = Classes/DTOs/MBBoardInfo.h; sourceTree = "<group>"; };
 		16558F381A14A80600B2F59A /* MBBoardInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBBoardInfo.m; path = Classes/DTOs/MBBoardInfo.m; sourceTree = "<group>"; };
-		16558F3B1A14A81300B2F59A /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Base; path = Base.lproj/MBMessageInfo.h; sourceTree = "<group>"; };
-		16558F3D1A14A81300B2F59A /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Base; path = Base.lproj/MBMessageInfo.m; sourceTree = "<group>"; };
+		16558F3E1A14A95200B2F59A /* MBMessageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBMessageInfo.h; path = Classes/DTOs/MBMessageInfo.h; sourceTree = "<group>"; };
+		16558F3F1A14A95200B2F59A /* MBMessageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBMessageInfo.m; path = Classes/DTOs/MBMessageInfo.m; sourceTree = "<group>"; };
+		16558F411A14A95D00B2F59A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
+		16558F421A14A95D00B2F59A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
+		16558F441A14A97500B2F59A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Classes/Views/ViewController.h; sourceTree = "<group>"; };
+		16558F451A14A97500B2F59A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Classes/Views/ViewController.m; sourceTree = "<group>"; };
 		54E4ED08BFD0438F814EA96A /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		56DFCDE4A5AD491083A771DE /* Pods-MessageBoardTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessageBoardTests.xcconfig"; path = "Pods/Pods-MessageBoardTests.xcconfig"; sourceTree = "<group>"; };
 		6F2B2428F5C3409F860BDF6A /* libPods-MessageBoardTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MessageBoardTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -186,12 +187,12 @@
 		161169571A136D1D00740F95 /* DTOs */ = {
 			isa = PBXGroup;
 			children = (
+				16558F3E1A14A95200B2F59A /* MBMessageInfo.h */,
+				16558F3F1A14A95200B2F59A /* MBMessageInfo.m */,
 				16558F371A14A80600B2F59A /* MBBoardInfo.h */,
 				16558F381A14A80600B2F59A /* MBBoardInfo.m */,
 				16558F341A14A74400B2F59A /* MBRequestResult.h */,
 				16558F351A14A74400B2F59A /* MBRequestResult.m */,
-				16558F3A1A14A81300B2F59A /* MBMessageInfo.h */,
-				16558F3C1A14A81300B2F59A /* MBMessageInfo.m */,
 			);
 			name = DTOs;
 			sourceTree = "<group>";
@@ -222,8 +223,8 @@
 			isa = PBXGroup;
 			children = (
 				16558F071A14549D00B2F59A /* Base */,
-				161169371A13685700740F95 /* ViewController.h */,
-				161169381A13685700740F95 /* ViewController.m */,
+				16558F441A14A97500B2F59A /* ViewController.h */,
+				16558F451A14A97500B2F59A /* ViewController.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -256,10 +257,10 @@
 				161169571A136D1D00740F95 /* DTOs */,
 				16558F211A14637B00B2F59A /* API Service */,
 				161169561A136D0C00740F95 /* Tools */,
+				16558F411A14A95D00B2F59A /* AppDelegate.h */,
+				16558F421A14A95D00B2F59A /* AppDelegate.m */,
 				16558F2E1A14976800B2F59A /* MBConfig.h */,
 				16558F2F1A14976800B2F59A /* MBConfig.m */,
-				161169341A13685700740F95 /* AppDelegate.h */,
-				161169351A13685700740F95 /* AppDelegate.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -506,16 +507,17 @@
 				16558F331A14995400B2F59A /* NSDictionary+MBUtility.m in Sources */,
 				16558F271A14646D00B2F59A /* MBApiResponse.m in Sources */,
 				16558F2D1A148CA900B2F59A /* MBApiRequest+BuildFactory.m in Sources */,
+				16558F431A14A95D00B2F59A /* AppDelegate.m in Sources */,
 				16558F111A14592600B2F59A /* MBBaseViewController.m in Sources */,
 				16558F171A145BEF00B2F59A /* UIViewController+MBWireframe.m in Sources */,
-				161169391A13685700740F95 /* ViewController.m in Sources */,
 				16558F0B1A14557200B2F59A /* NSString+MBUtility.m in Sources */,
-				161169361A13685700740F95 /* AppDelegate.m in Sources */,
 				161169331A13685700740F95 /* main.m in Sources */,
+				16558F401A14A95200B2F59A /* MBMessageInfo.m in Sources */,
 				16558F391A14A80600B2F59A /* MBBoardInfo.m in Sources */,
 				16558F0E1A14581400B2F59A /* MBBasePresenter.m in Sources */,
 				16558F301A14976800B2F59A /* MBConfig.m in Sources */,
 				16558F1A1A145C3100B2F59A /* MBPageMessenger.m in Sources */,
+				16558F461A14A97500B2F59A /* ViewController.m in Sources */,
 				16558F361A14A74400B2F59A /* MBRequestResult.m in Sources */,
 				16558F201A145D6900B2F59A /* MBAssemblingFactory.m in Sources */,
 				16558F2A1A14899800B2F59A /* MBApiService.m in Sources */,
@@ -557,22 +559,6 @@
 				161169401A13685700740F95 /* Base */,
 			);
 			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-		16558F3A1A14A81300B2F59A /* MBMessageInfo.h */ = {
-			isa = PBXVariantGroup;
-			children = (
-				16558F3B1A14A81300B2F59A /* Base */,
-			);
-			name = MBMessageInfo.h;
-			sourceTree = "<group>";
-		};
-		16558F3C1A14A81300B2F59A /* MBMessageInfo.m */ = {
-			isa = PBXVariantGroup;
-			children = (
-				16558F3D1A14A81300B2F59A /* Base */,
-			);
-			name = MBMessageInfo.m;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
