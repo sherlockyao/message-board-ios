@@ -14,6 +14,8 @@
 		1611694D1A13685700740F95 /* MessageBoardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1611694C1A13685700740F95 /* MessageBoardTests.m */; };
 		1612791F1A15A63E00F4A765 /* MBMessageInfo+ResponseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1612791E1A15A63E00F4A765 /* MBMessageInfo+ResponseParser.m */; };
 		161279221A15AAED00F4A765 /* MBRequestResult+ResponseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 161279211A15AAED00F4A765 /* MBRequestResult+ResponseParser.m */; };
+		161279251A15ACFA00F4A765 /* MBMessageForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 161279241A15ACFA00F4A765 /* MBMessageForm.m */; };
+		161279291A15B40100F4A765 /* MBMessageForm+ParameterExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 161279281A15B40100F4A765 /* MBMessageForm+ParameterExtractor.m */; };
 		16558F0B1A14557200B2F59A /* NSString+MBUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 16558F0A1A14557200B2F59A /* NSString+MBUtility.m */; };
 		16558F0E1A14581400B2F59A /* MBBasePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 16558F0D1A14581400B2F59A /* MBBasePresenter.m */; };
 		16558F111A14592600B2F59A /* MBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16558F101A14592600B2F59A /* MBBaseViewController.m */; };
@@ -63,6 +65,10 @@
 		1612791E1A15A63E00F4A765 /* MBMessageInfo+ResponseParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MBMessageInfo+ResponseParser.m"; path = "Classes/APIService/MBMessageInfo+ResponseParser.m"; sourceTree = "<group>"; };
 		161279201A15AAED00F4A765 /* MBRequestResult+ResponseParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MBRequestResult+ResponseParser.h"; path = "Classes/APIService/MBRequestResult+ResponseParser.h"; sourceTree = "<group>"; };
 		161279211A15AAED00F4A765 /* MBRequestResult+ResponseParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MBRequestResult+ResponseParser.m"; path = "Classes/APIService/MBRequestResult+ResponseParser.m"; sourceTree = "<group>"; };
+		161279231A15ACFA00F4A765 /* MBMessageForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBMessageForm.h; path = Classes/DTOs/MBMessageForm.h; sourceTree = "<group>"; };
+		161279241A15ACFA00F4A765 /* MBMessageForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBMessageForm.m; path = Classes/DTOs/MBMessageForm.m; sourceTree = "<group>"; };
+		161279271A15B40100F4A765 /* MBMessageForm+ParameterExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MBMessageForm+ParameterExtractor.h"; path = "Classes/APIService/MBMessageForm+ParameterExtractor.h"; sourceTree = "<group>"; };
+		161279281A15B40100F4A765 /* MBMessageForm+ParameterExtractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MBMessageForm+ParameterExtractor.m"; path = "Classes/APIService/MBMessageForm+ParameterExtractor.m"; sourceTree = "<group>"; };
 		16558F091A14557200B2F59A /* NSString+MBUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+MBUtility.h"; path = "Classes/Tools/NSString+MBUtility.h"; sourceTree = "<group>"; };
 		16558F0A1A14557200B2F59A /* NSString+MBUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+MBUtility.m"; path = "Classes/Tools/NSString+MBUtility.m"; sourceTree = "<group>"; };
 		16558F0C1A14581400B2F59A /* MBBasePresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBBasePresenter.h; path = Classes/Presenters/MBBasePresenter.h; sourceTree = "<group>"; };
@@ -196,6 +202,8 @@
 		161169571A136D1D00740F95 /* DTOs */ = {
 			isa = PBXGroup;
 			children = (
+				161279231A15ACFA00F4A765 /* MBMessageForm.h */,
+				161279241A15ACFA00F4A765 /* MBMessageForm.m */,
 				16558F371A14A80600B2F59A /* MBBoardInfo.h */,
 				16558F381A14A80600B2F59A /* MBBoardInfo.m */,
 				16558F3E1A14A95200B2F59A /* MBMessageInfo.h */,
@@ -292,6 +300,15 @@
 			name = Storyboards;
 			sourceTree = "<group>";
 		};
+		161279261A15B2C300F4A765 /* Parameter Extractor */ = {
+			isa = PBXGroup;
+			children = (
+				161279271A15B40100F4A765 /* MBMessageForm+ParameterExtractor.h */,
+				161279281A15B40100F4A765 /* MBMessageForm+ParameterExtractor.m */,
+			);
+			name = "Parameter Extractor";
+			sourceTree = "<group>";
+		};
 		16558F061A14549800B2F59A /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -324,6 +341,7 @@
 		16558F211A14637B00B2F59A /* API Service */ = {
 			isa = PBXGroup;
 			children = (
+				161279261A15B2C300F4A765 /* Parameter Extractor */,
 				16558F471A14BC3500B2F59A /* Response Parser */,
 				16558F281A14899800B2F59A /* MBApiService.h */,
 				16558F291A14899800B2F59A /* MBApiService.m */,
@@ -536,10 +554,12 @@
 				16558F0B1A14557200B2F59A /* NSString+MBUtility.m in Sources */,
 				161169331A13685700740F95 /* main.m in Sources */,
 				16558F401A14A95200B2F59A /* MBMessageInfo.m in Sources */,
+				161279251A15ACFA00F4A765 /* MBMessageForm.m in Sources */,
 				16558F391A14A80600B2F59A /* MBBoardInfo.m in Sources */,
 				16558F0E1A14581400B2F59A /* MBBasePresenter.m in Sources */,
 				16558F301A14976800B2F59A /* MBConfig.m in Sources */,
 				16558F1A1A145C3100B2F59A /* MBPageMessenger.m in Sources */,
+				161279291A15B40100F4A765 /* MBMessageForm+ParameterExtractor.m in Sources */,
 				16558F461A14A97500B2F59A /* ViewController.m in Sources */,
 				16558F361A14A74400B2F59A /* MBRequestResult.m in Sources */,
 				16558F4A1A14BCE200B2F59A /* MBBoardInfo+ResponseParser.m in Sources */,

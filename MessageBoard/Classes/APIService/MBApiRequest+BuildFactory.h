@@ -7,10 +7,11 @@
 //
 
 #import "MBApiRequest.h"
+#import "MBMessageForm.h"
 
 @interface MBApiRequest (BuildFactory)
 
 + (instancetype)requestForLocateBoard;
-+ (instancetype)requestForCreateMessage;
++ (instancetype)requestForCreateMessage:(MBMessageForm *)messageForm;
 
 @end

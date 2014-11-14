@@ -31,6 +31,9 @@ typedef id (^MBApiResponseParser)(NSDictionary *data);
 @property (nonatomic, assign) MBApiRequestMethod method;
 @property(nonatomic,copy) MBApiResponseParser responseParser;
 
+- (void)addParameters:(NSDictionary *)parameters;
+- (void)addParameter:(NSString *)name value:(id)value;
+
 - (AFHTTPRequestOperation *)httpRequestOperationValue;
 
 @end

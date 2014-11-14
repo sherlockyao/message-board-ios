@@ -8,6 +8,7 @@
 
 #import "MBApiRequest+BuildFactory.h"
 #import "MBConfig.h"
+#import "MBMessageForm+ParameterExtractor.h"
 #import "MBBoardInfo+ResponseParser.h"
 #import "MBRequestResult+ResponseParser.h"
 
@@ -24,8 +25,9 @@ static NSString *const CreateMessagePath = @"/message";
   return request;
 }
 
-+ (instancetype)requestForCreateMessage {
-  MBApiRequest *request = [self requestForPath:LocateBoardPath type:MBApiRequestLocateBoard method:MBApiRequestMethodGet];
++ (instancetype)requestForCreateMessage:(MBMessageForm *)messageForm {
+  MBApiRequest *request = [self requestForPath:LocateBoardPath type:MBApiRequestLocateBoard method:MBApiRequestMethodPost];
+  [request addParameters:[messageForm parameters]];
   request.responseParser = ^id(NSDictionary *data) {
     return [MBRequestResult resultFromDictionaryData:data];
   };
