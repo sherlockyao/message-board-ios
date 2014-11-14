@@ -12,6 +12,8 @@
 		1611693E1A13685700740F95 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1611693D1A13685700740F95 /* Images.xcassets */; };
 		161169411A13685700740F95 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1611693F1A13685700740F95 /* LaunchScreen.xib */; };
 		1611694D1A13685700740F95 /* MessageBoardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1611694C1A13685700740F95 /* MessageBoardTests.m */; };
+		1612791F1A15A63E00F4A765 /* MBMessageInfo+ResponseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1612791E1A15A63E00F4A765 /* MBMessageInfo+ResponseParser.m */; };
+		161279221A15AAED00F4A765 /* MBRequestResult+ResponseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 161279211A15AAED00F4A765 /* MBRequestResult+ResponseParser.m */; };
 		16558F0B1A14557200B2F59A /* NSString+MBUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 16558F0A1A14557200B2F59A /* NSString+MBUtility.m */; };
 		16558F0E1A14581400B2F59A /* MBBasePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 16558F0D1A14581400B2F59A /* MBBasePresenter.m */; };
 		16558F111A14592600B2F59A /* MBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16558F101A14592600B2F59A /* MBBaseViewController.m */; };
@@ -31,6 +33,7 @@
 		16558F401A14A95200B2F59A /* MBMessageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 16558F3F1A14A95200B2F59A /* MBMessageInfo.m */; };
 		16558F431A14A95D00B2F59A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 16558F421A14A95D00B2F59A /* AppDelegate.m */; };
 		16558F461A14A97500B2F59A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16558F451A14A97500B2F59A /* ViewController.m */; };
+		16558F4A1A14BCE200B2F59A /* MBBoardInfo+ResponseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 16558F491A14BCE200B2F59A /* MBBoardInfo+ResponseParser.m */; };
 		7777F8F48FF54C9EB0D5748F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1356CABEE7F44588B72EBCF8 /* libPods.a */; };
 		9DB17E671EC1404B9A71F55C /* libPods-MessageBoardTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F2B2428F5C3409F860BDF6A /* libPods-MessageBoardTests.a */; };
 /* End PBXBuildFile section */
@@ -56,6 +59,10 @@
 		161169461A13685700740F95 /* MessageBoardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MessageBoardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1611694B1A13685700740F95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1611694C1A13685700740F95 /* MessageBoardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageBoardTests.m; sourceTree = "<group>"; };
+		1612791D1A15A63E00F4A765 /* MBMessageInfo+ResponseParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MBMessageInfo+ResponseParser.h"; path = "Classes/APIService/MBMessageInfo+ResponseParser.h"; sourceTree = "<group>"; };
+		1612791E1A15A63E00F4A765 /* MBMessageInfo+ResponseParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MBMessageInfo+ResponseParser.m"; path = "Classes/APIService/MBMessageInfo+ResponseParser.m"; sourceTree = "<group>"; };
+		161279201A15AAED00F4A765 /* MBRequestResult+ResponseParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MBRequestResult+ResponseParser.h"; path = "Classes/APIService/MBRequestResult+ResponseParser.h"; sourceTree = "<group>"; };
+		161279211A15AAED00F4A765 /* MBRequestResult+ResponseParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MBRequestResult+ResponseParser.m"; path = "Classes/APIService/MBRequestResult+ResponseParser.m"; sourceTree = "<group>"; };
 		16558F091A14557200B2F59A /* NSString+MBUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+MBUtility.h"; path = "Classes/Tools/NSString+MBUtility.h"; sourceTree = "<group>"; };
 		16558F0A1A14557200B2F59A /* NSString+MBUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+MBUtility.m"; path = "Classes/Tools/NSString+MBUtility.m"; sourceTree = "<group>"; };
 		16558F0C1A14581400B2F59A /* MBBasePresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBBasePresenter.h; path = Classes/Presenters/MBBasePresenter.h; sourceTree = "<group>"; };
@@ -94,6 +101,8 @@
 		16558F421A14A95D00B2F59A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
 		16558F441A14A97500B2F59A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Classes/Views/ViewController.h; sourceTree = "<group>"; };
 		16558F451A14A97500B2F59A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Classes/Views/ViewController.m; sourceTree = "<group>"; };
+		16558F481A14BCE200B2F59A /* MBBoardInfo+ResponseParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MBBoardInfo+ResponseParser.h"; path = "Classes/APIService/MBBoardInfo+ResponseParser.h"; sourceTree = "<group>"; };
+		16558F491A14BCE200B2F59A /* MBBoardInfo+ResponseParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MBBoardInfo+ResponseParser.m"; path = "Classes/APIService/MBBoardInfo+ResponseParser.m"; sourceTree = "<group>"; };
 		54E4ED08BFD0438F814EA96A /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		56DFCDE4A5AD491083A771DE /* Pods-MessageBoardTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessageBoardTests.xcconfig"; path = "Pods/Pods-MessageBoardTests.xcconfig"; sourceTree = "<group>"; };
 		6F2B2428F5C3409F860BDF6A /* libPods-MessageBoardTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MessageBoardTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -187,10 +196,10 @@
 		161169571A136D1D00740F95 /* DTOs */ = {
 			isa = PBXGroup;
 			children = (
-				16558F3E1A14A95200B2F59A /* MBMessageInfo.h */,
-				16558F3F1A14A95200B2F59A /* MBMessageInfo.m */,
 				16558F371A14A80600B2F59A /* MBBoardInfo.h */,
 				16558F381A14A80600B2F59A /* MBBoardInfo.m */,
+				16558F3E1A14A95200B2F59A /* MBMessageInfo.h */,
+				16558F3F1A14A95200B2F59A /* MBMessageInfo.m */,
 				16558F341A14A74400B2F59A /* MBRequestResult.h */,
 				16558F351A14A74400B2F59A /* MBRequestResult.m */,
 			);
@@ -315,6 +324,7 @@
 		16558F211A14637B00B2F59A /* API Service */ = {
 			isa = PBXGroup;
 			children = (
+				16558F471A14BC3500B2F59A /* Response Parser */,
 				16558F281A14899800B2F59A /* MBApiService.h */,
 				16558F291A14899800B2F59A /* MBApiService.m */,
 				16558F221A1463C200B2F59A /* MBApiRequest.h */,
@@ -325,6 +335,19 @@
 				16558F2C1A148CA900B2F59A /* MBApiRequest+BuildFactory.m */,
 			);
 			name = "API Service";
+			sourceTree = "<group>";
+		};
+		16558F471A14BC3500B2F59A /* Response Parser */ = {
+			isa = PBXGroup;
+			children = (
+				16558F481A14BCE200B2F59A /* MBBoardInfo+ResponseParser.h */,
+				16558F491A14BCE200B2F59A /* MBBoardInfo+ResponseParser.m */,
+				1612791D1A15A63E00F4A765 /* MBMessageInfo+ResponseParser.h */,
+				1612791E1A15A63E00F4A765 /* MBMessageInfo+ResponseParser.m */,
+				161279201A15AAED00F4A765 /* MBRequestResult+ResponseParser.h */,
+				161279211A15AAED00F4A765 /* MBRequestResult+ResponseParser.m */,
+			);
+			name = "Response Parser";
 			sourceTree = "<group>";
 		};
 		1AF51A368AE3477A993748DF /* Frameworks */ = {
@@ -519,7 +542,10 @@
 				16558F1A1A145C3100B2F59A /* MBPageMessenger.m in Sources */,
 				16558F461A14A97500B2F59A /* ViewController.m in Sources */,
 				16558F361A14A74400B2F59A /* MBRequestResult.m in Sources */,
+				16558F4A1A14BCE200B2F59A /* MBBoardInfo+ResponseParser.m in Sources */,
+				161279221A15AAED00F4A765 /* MBRequestResult+ResponseParser.m in Sources */,
 				16558F201A145D6900B2F59A /* MBAssemblingFactory.m in Sources */,
+				1612791F1A15A63E00F4A765 /* MBMessageInfo+ResponseParser.m in Sources */,
 				16558F2A1A14899800B2F59A /* MBApiService.m in Sources */,
 				16558F1D1A145CAD00B2F59A /* MBWireframe.m in Sources */,
 				16558F241A1463C200B2F59A /* MBApiRequest.m in Sources */,

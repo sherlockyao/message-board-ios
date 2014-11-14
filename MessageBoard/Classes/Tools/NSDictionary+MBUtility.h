@@ -17,6 +17,8 @@
 
 - (NSString *)stringForKey:(NSString *)key;
 
+- (NSArray *)arrayForKey:(NSString *)key;
+
 - (NSDictionary *)dictionaryForKey:(NSString *)key;
 
 @end

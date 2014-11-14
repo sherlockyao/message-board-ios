@@ -50,6 +50,15 @@
   }
 }
 
+- (NSArray *)arrayForKey:(NSString *)key {
+  id value = [self valueForKey:key];
+  if ([value isKindOfClass:[NSArray class]]) {
+    return value;
+  } else {
+    return @[];
+  }
+}
+
 - (NSDictionary *)dictionaryForKey:(NSString *)key {
   id value = [self valueForKey:key];
   if ([value isKindOfClass:[NSDictionary class]]) {

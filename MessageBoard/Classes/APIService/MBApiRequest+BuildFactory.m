@@ -7,9 +7,9 @@
 //
 
 #import "MBApiRequest+BuildFactory.h"
-#import "NSDictionary+MBUtility.h"
 #import "MBConfig.h"
-#import "MBRequestResult.h"
+#import "MBBoardInfo+ResponseParser.h"
+#import "MBRequestResult+ResponseParser.h"
 
 static NSString *const LocateBoardPath = @"/board";
 static NSString *const CreateMessagePath = @"/message";
@@ -19,7 +19,7 @@ static NSString *const CreateMessagePath = @"/message";
 + (instancetype)requestForLocateBoard {
   MBApiRequest *request = [self requestForPath:LocateBoardPath type:MBApiRequestLocateBoard method:MBApiRequestMethodGet];
   request.responseParser = ^id(NSDictionary *data) {
-    return nil;
+    return [MBBoardInfo infoFromDictionaryData:data];
   };
   return request;
 }
@@ -27,9 +27,7 @@ static NSString *const CreateMessagePath = @"/message";
 + (instancetype)requestForCreateMessage {
   MBApiRequest *request = [self requestForPath:LocateBoardPath type:MBApiRequestLocateBoard method:MBApiRequestMethodGet];
   request.responseParser = ^id(NSDictionary *data) {
-    MBRequestResult *result = [MBRequestResult new];
-    result.success = [data booleanForkey:@"success"];
-    return result;
+    return [MBRequestResult resultFromDictionaryData:data];
   };
   return request;
 }

@@ -10,4 +10,10 @@
 
 @interface MBBoardInfo : NSObject
 
+@property (nonatomic, strong) NSString *boardId;
+@property (nonatomic, strong) NSString *title;
+@property (nonatomic, assign) NSInteger messageCount;
+
+@property (nonatomic, strong) NSArray *messages;
+
 @end

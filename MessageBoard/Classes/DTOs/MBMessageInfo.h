@@ -10,4 +10,9 @@
 
 @interface MBMessageInfo : NSObject
 
+@property (nonatomic, assign) NSInteger orderNumber;
+@property (nonatomic, strong) NSString *content;
+@property (nonatomic, strong) NSString *poster;
+@property (nonatomic, assign) NSNumber *timestamp;
+
 @end
